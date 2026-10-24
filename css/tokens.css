@@ -1,0 +1,101 @@
+/* =========================================================
+   DESIGN TOKENS — English for Office & HR
+   Giao diện EdTech (Linh duyệt 24/10/2026): cam là màu chính,
+   chữ xanh than, nền xám xanh rất nhạt, mỗi cấp độ một màu.
+   Mọi màu, cỡ chữ, khoảng cách đều lấy từ đây.
+   ========================================================= */
+:root {
+  /* --- Màu nền & bề mặt --- */
+  --color-bg: #F6F7FB;          /* nền chính */
+  --color-surface: #E8ECF2;     /* nền thanh tiến độ, vạch chia */
+  --color-surface-soft: #F1F3F8;/* hàng hover, khối trích */
+  --color-card: #FFFFFF;        /* nền thẻ */
+  --color-border: #E8ECF2;      /* viền thẻ (dày 2px) */
+  --color-border-strong: #D5DBE5;
+
+  /* --- Chữ --- */
+  --color-text: #1E2A3B;        /* xanh than – chữ chính */
+  --color-text-2: #5B6678;      /* chữ phụ – 5.9:1 trên trắng */
+  --color-text-3: #626C7E;      /* chú thích nhỏ – 5.3:1 trên trắng */
+  --color-on-dark: #FFFFFF;
+
+  /* --- Màu chính (cam) --- */
+  --color-accent: #F76707;        /* khối lớn, vòng và thanh tiến độ */
+  --color-accent-btn: #E8590C;    /* nền nút chính (chữ trắng đậm, cỡ lớn) */
+  --color-accent-shadow: #C2410C; /* gờ dưới của nút chính */
+  --color-accent-strong: #C2410C; /* chữ cam trên nền trắng – 5.2:1 */
+  --color-accent-soft: #FFF1E6;   /* nền nhạt: mục đang chọn, chuỗi ngày */
+  --color-accent-soft-2: #FFE3CC; /* vòng sáng quanh mục đang học */
+
+  /* --- Màu từng cấp độ --- */
+  --lv-a1: #2F9E44;
+  --lv-a2: #F76707;
+  --lv-b1: #1C7ED6;
+  --lv-b2: #7048E8;
+  --lv-c1: #C2255C;
+
+  /* --- Trạng thái (luôn đi kèm biểu tượng + chữ) --- */
+  --color-success: #15803D;
+  --color-success-btn: #16A34A;
+  --color-success-soft: #DCFCE7;
+  --color-error: #C92A2A;
+  --color-error-soft: #FFE3E3;
+  --color-warning: #A15C00;
+  --color-warning-soft: #FFF9DB;
+  --color-info-soft: #E7F0FF;
+
+  /* --- Chữ --- */
+  --font-sans: "Nunito", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-sans); /* giao diện mới dùng một họ chữ; giữ tên biến để các màn hình cũ không phải sửa */
+
+  --text-xs: 0.8125rem;   /* 13px – nhãn */
+  --text-sm: 0.875rem;    /* 14px – chú thích */
+  --text-base: 1rem;      /* 16px – giao diện */
+  --text-read: 1.0625rem; /* 17px – nội dung bài học */
+  --text-lg: 1.1875rem;   /* 19px */
+  --text-xl: 1.375rem;    /* 22px */
+  --text-2xl: 1.75rem;    /* 28px */
+  --text-3xl: 2.25rem;    /* 36px */
+  --text-display: 3rem;   /* 48px – mã cấp độ */
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-read: 1.65;
+
+  --weight-regular: 600;
+  --weight-medium: 700;
+  --weight-semibold: 800;
+  --weight-black: 900;
+
+  /* --- Khoảng cách (bước 4px) --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* --- Hình khối --- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --shadow-sm: 0 3px 0 var(--color-border);
+  --shadow-md: 0 8px 24px -12px rgba(30, 42, 59, 0.18);
+
+  /* --- Bố cục --- */
+  --width-page: 1200px;
+  --width-read: 700px;
+  --header-h: 68px;
+
+  /* --- Chuyển động --- */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur: 0ms; }
+}
